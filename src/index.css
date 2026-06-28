@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@import "@heroui/styles"; 
+
+
+
+
+@theme {
+
+  /* ==========================
+      BACKGROUND COLORS
+     ========================== */
+
+  --color-bg-primary: #0B1120;      /* Main website background (Body) */
+
+  --color-bg-secondary: #111827;    /* Alternate section background (About, Contact, etc.) */
+
+  --color-bg-card: #1E293B;         /* Cards (Projects, Skills, Services, Experience) */
+
+
+  /* ==========================
+      BRAND COLORS
+     ========================== */
+
+  --color-primary: #3B82F6;         /* Primary brand color (Buttons, Active Links, Icons, CTA) */
+
+  --color-primary-hover: #2563EB;   /* Hover state for primary buttons and links */
+
+  --color-accent: #8B5CF6;          /* Accent color (Gradient, Highlights, Small UI Elements) */
+
+
+  /* ==========================
+      TEXT COLORS
+     ========================== */
+
+  --color-text-primary: #F8FAFC;    /* Main headings (Hero Title, Section Title, Card Title) */
+
+  --color-text-secondary: #CBD5E1;  /* Paragraphs, Descriptions, Normal Content */
+
+
+
+  /* ==========================
+      BORDER & DIVIDER
+     ========================== */
+
+  --color-border: #334155;          /* Borders, Dividers, Inputs, Navbar Bottom Border */
+  --color-border-hover: #3B82F6;     /* Primary Blue Border */
+
+
+
+
+  /* ==========================
+      COMMON COLORS
+     ========================== */
+
+  --color-white: #FFFFFF;           /* White text/icons if needed */
+
+  --color-black: #000000;           /* Shadow & overlays (Use with opacity) */
+
+
+
+ /* ==========================
+      FONT FAMILY
+     ========================== */
+
+   --font-heading: "Plus Jakarta Sans", sans-serif;    /* Hero, Section Titles */
+
+  --font-body: "Inter", sans-serif;                /* Paragraph, Buttons, Normal Text */
+
+}
