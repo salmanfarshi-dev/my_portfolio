@@ -5,8 +5,18 @@ import Skill from './Page/Skill'
 import Projects from './Page/Projects'
 import Services from './Page/Services'
 import Contact from './Page/Contact'
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+    useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+    });
+  }, []);
   return (
     <>
      <Navbar/>
