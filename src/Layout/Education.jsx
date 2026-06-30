@@ -4,12 +4,14 @@ import { MdComputer } from "react-icons/md";
 import { FaCalendarDays } from "react-icons/fa6";
 import Skills from "../Component/Skills";
 import { FaRegCalendarCheck } from "react-icons/fa6";
+import HeadTittle from "../Component/HeadTittle";
+import HeadPera from "../Component/HeadPera";
 
 function Education() {
   return (
    <>
-    <h4 className="text-3xl md:text-6xl text-center font-Jakarta font-semibold text-text-primary">Skills</h4>
-    <p className="text-text-secondary text-center text-xl md:text-2xl font-medium mt-3">My technical level</p>
+    <HeadTittle tittle="Skills"/>
+    <HeadPera pera="My technical level"/>
     <div className="flex flex-col md:flex-row gap-y-5  gap-x-20 mt-15">
       <div className="md:w-130 bg-bg-card px-6 py-10 rounded-[20px] border border-border flex-1">
         <div className="flex gap-x-4">
