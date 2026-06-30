@@ -11,7 +11,7 @@ function App() {
     <>
      <Navbar/>
 
-     <div className="pt-30 md:pt-40">
+     <div>
       <Home/>
       <Skill/>
       <Projects/>

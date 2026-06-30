@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { IoMenuSharp } from "react-icons/io5";
+
 import { IoClose } from "react-icons/io5";
 
 function Navbar() {
@@ -43,7 +44,7 @@ function Navbar() {
           onClick={() => setOpen(!open)}
           className="md:hidden text-3xl text-primary"
         >
-          {open ? <IoClose /> : <HiOutlineMenuAlt3 />}
+          {open ? <IoClose /> : <IoMenuSharp />}
         </button>
 
         <div
@@ -58,7 +59,7 @@ function Navbar() {
                   to={item.to}
                   spy={true}
                   smooth={true}
-                  offset={-80}
+                  offset={-120}
                   duration={500}
                   activeClass="active"
                   onClick={() => setOpen(false)}
