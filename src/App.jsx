@@ -1,10 +1,26 @@
 import React from 'react'
+import Navbar from './Layout/Navbar'
+import Home from './Page/Home'
+import Skill from './Page/Skill'
+import Projects from './Page/Projects'
+import Services from './Page/Services'
+import Contact from './Page/Contact'
 
 function App() {
   return (
-    <div className='text-text-primary bg-bg-primary py-6 text-center text-4xl font-bold'>
-      Salman farshi
-    </div>
+    <>
+     <Navbar/>
+
+     <div className="pt-30 md:pt-40">
+      <Home/>
+      <Skill/>
+      <Projects/>
+      <Services/>
+      <Contact/>
+
+
+     </div>
+    </>
   )
 }
 

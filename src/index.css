@@ -1,7 +1,14 @@
 @import "tailwindcss";
 @import "@heroui/styles"; 
 
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+@utility navbar{
+    @apply font-Inter font-normal text-[20px] hover:text-primary/90 duration-300 cursor-pointer ;
+}
 
 
 @theme {
@@ -62,8 +69,43 @@
       FONT FAMILY
      ========================== */
 
-   --font-heading: "Plus Jakarta Sans", sans-serif;    /* Hero, Section Titles */
+   --font-Jakarta: "Plus Jakarta Sans", sans-serif;    /* Hero, Section Titles */
 
-  --font-body: "Inter", sans-serif;                /* Paragraph, Buttons, Normal Text */
+  --font-Inter: "Inter", sans-serif;                /* Paragraph, Buttons, Normal Text */
 
+}
+
+
+
+
+
+
+
+
+
+.navbar {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #3B82F6;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.navbar:hover,
+.navbar.active {
+  color: #3B82F6;
+}
+
+.navbar:hover::after,
+.navbar.active::after {
+  width: 100%;
 }
