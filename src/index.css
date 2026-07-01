@@ -21,6 +21,10 @@
   @apply bg-bg-card border border-border rounded-[20px] px-6 py-10 hover:bg-primary/20 h-full hover:-translate-y-0.5 hover:border-border-hover duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.2)];
 }
 
+@utility myprocess{
+  @apply bg-cyan-200/20 border border-cyan-200 text-cyan-400 font-semibold w-12! h-12!;
+}
+
 @theme {
 
   /* ==========================
