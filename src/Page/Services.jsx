@@ -7,9 +7,9 @@ import ServiceCard from '../Layout/ServiceCard'
 function Services() {
   return (
 
-    <section className='min-h-screen max-w-330 mx-auto px-4 md:px-0 md:pt-10' id='service'>
+    <section className='min-h-screen max-w-330 mx-auto px-4 md:px-0 md:pt-10 mb-20 md:pb-40' id='service'>
       <HeadTittle tittle="Services"/>
-      <HeadPera pera="From responsive frontend interfaces to complete web solutions, I create reliable, user-focused applications that bring your ideas to life." className="w-[70%] mx-auto"/>
+      <HeadPera pera="From responsive frontend interfaces to complete web solutions, I create reliable, user-focused applications that bring your ideas to life." className="md:w-[70%] mx-auto"/>
 
         <ServiceCard/>
         

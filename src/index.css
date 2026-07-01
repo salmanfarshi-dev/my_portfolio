@@ -22,8 +22,14 @@
 }
 
 @utility myprocess{
-  @apply bg-cyan-200/20 border border-cyan-200 text-cyan-400 font-semibold w-12! h-12!;
+  @apply bg-cyan-200/20 border border-cyan-200 text-cyan-400 font-semibold md:w-12! w-10! h-10! md:h-12!;
 }
+
+
+@utility iconlist{
+  @apply md:w-12  md:h-12  w-10 h-10 bg-transparent rounded-full border border-[#22D3EE] flex justify-center items-center hover:border-transparent hover:bg-[#22D3EE] duration-300 text-[#22D3EE] hover:text-bg-primary text-[16px] md:text-xl cursor-pointer
+}
+
 
 @theme {
 
