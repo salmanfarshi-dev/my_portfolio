@@ -10,10 +10,10 @@ import HeadPera from "../Component/HeadPera";
 function Education() {
   return (
    <>
-    <HeadTittle tittle="Skills"/>
+    <HeadTittle  tittle="Skills"/>
     <HeadPera pera="My technical level"/>
     <div className="flex flex-col md:flex-row gap-y-5  gap-x-20 mt-15">
-      <div className="md:w-130 bg-bg-card px-6 py-10 rounded-[20px] border border-border flex-1">
+      <div className="md:w-130 bg-bg-card px-6 py-10 rounded-[20px] border border-border flex-1 " >
         <div className="flex gap-x-4">
           <div className="w-14 h-14 rounded-md bg-primary/10 flex justify-center items-center border border-border-hover">
             <FaGraduationCap className="text-2xl md:text-3xl text-primary" />
@@ -85,7 +85,7 @@ function Education() {
         </div>
       </div>
 
-      <div className="md:w-130 bg-bg-card px-6 py-10 rounded-[20px] border border-border items-stretch">
+      <div className="md:w-130 bg-bg-card px-6 py-10 rounded-[20px] border border-border items-stretch" > 
         <Skills />
       </div>
     </div>

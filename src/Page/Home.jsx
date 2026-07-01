@@ -9,11 +9,11 @@ function Home() {
      <section id="home" className="min-h-screen max-w-330 mx-auto md:pt-20 mt-30 px-4 md:px-0">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="">
-          <h1 className="tittle " data-aos="fade-up">
-            <span className="text-white text-[44px] md:text-[50px]">Hello, I'm </span>Salman
+          <h1 className="tittle " >
+            <span className="text-white text-[45px] md:text-[55px]">Hello, I'm </span>Salman
             Farshi
           </h1>
-          <p className="text-text-secondary text-[16px] md:text-[18px] font-normal w-full md:w-[65%] md:mt-5 mt-3 "  data-aos="fade-up">
+          <p className="text-text-secondary text-[16px] md:text-[18px] font-normal w-full md:w-[65%] md:mt-5 mt-3 "  >
             I’m a{" "}
             <span className="text-accent font-medium">
               Frontend Web Developer
@@ -23,7 +23,7 @@ function Home() {
             I’m currently expanding my expertise in the MERN Stack.
           </p>
 
-          <div className="flex gap-x-4 items-center mt-7"  data-aos="fade-up">
+          <div className="flex gap-x-4 items-center mt-7">
             <Button
               component="a"
               href=""
@@ -67,8 +67,8 @@ function Home() {
             variant="contained">Hire Me</Button>
           </div>
         </div>
-        <div className="">
-         <div className=""  data-aos="fade-up">
+        <div>
+         <div>
            <img src={Salman} alt=""  className="image"/>
          </div>
 

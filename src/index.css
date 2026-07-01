@@ -10,7 +10,7 @@
 }
 
 @utility tittle{
-  @apply text-[50px] leading-[60px] md:leading-normal md:text-[60px] font-semibold font-Jakarta bg-gradient-to-r from-[#8B5CF6] to-[#3B82F6] bg-clip-text text-transparent;
+  @apply text-[55px] leading-[60px] md:leading-normal md:text-[60px] font-semibold font-Jakarta bg-gradient-to-r from-[#8B5CF6] to-[#3B82F6] bg-clip-text text-transparent;
 }
 
 @utility image{
@@ -27,7 +27,7 @@
 
 
 @utility iconlist{
-  @apply md:w-12  md:h-12  w-10 h-10 bg-transparent rounded-full border border-[#22D3EE] flex justify-center items-center hover:border-transparent hover:bg-[#22D3EE] duration-300 text-[#22D3EE] hover:text-bg-primary text-[16px] md:text-xl cursor-pointer
+  @apply md:w-10  md:h-10  w-10 h-10 bg-transparent rounded-full border border-[#22D3EE] flex justify-center items-center hover:border-transparent hover:bg-[#22D3EE] duration-300 text-[#22D3EE] hover:text-bg-primary text-[16px] md:text-xl cursor-pointer
 }
 
 

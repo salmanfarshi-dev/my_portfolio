@@ -8,11 +8,12 @@ import Contact from './Page/Contact'
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from './Layout/Footer'
 
 function App() {
     useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 500,
       once: true,
       offset: 100,
     });
@@ -27,6 +28,7 @@ function App() {
       <Projects/>
       <Services/>
       <Contact/>
+      <Footer/>
 
 
      </div>

@@ -16,7 +16,7 @@ function ServiceCard() {
   return (
     <section className="mt-15">
       <div className="grid grid-cols-12 gap-6">
-        <div className="col-span-12 md:col-span-8">
+        <div className="col-span-12 md:col-span-8" data-aos="fade-right">
           <div className="card">
             <Icon
               icon={<FaReact className="text-2xl text-text-primary" />}
@@ -66,7 +66,7 @@ function ServiceCard() {
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-4">
+        <div className="col-span-12 md:col-span-4" data-aos="fade-left">
           <div className="card">
             <Icon
               icon={<FaMobileAlt className="text-2xl text-text-primary" />}
@@ -89,7 +89,7 @@ function ServiceCard() {
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-4">
+        <div className="col-span-12 md:col-span-4"  data-aos="fade-up-right">
           <div className="card">
             <CardTittle head="My process" />
 
@@ -146,7 +146,7 @@ function ServiceCard() {
           </div>
         </div>
 
-        <div className="col-span-12 md:col-span-4">
+        <div className="col-span-12 md:col-span-4" data-aos="fade-down">
           <div className="card">
             <Icon
               icon={<FiFigma className="text-primary text-2xl" />}
@@ -171,7 +171,7 @@ function ServiceCard() {
           </div>
         </div>
 
-        <div className="col-span-12 md:col-span-4">
+        <div className="col-span-12 md:col-span-4" data-aos="fade-up-left">
           <div className="card">
             <Icon
               icon={<MdColorLens className="text-white text-2xl" />}
@@ -212,7 +212,7 @@ function ServiceCard() {
           </div>
         </div>
 
-        <div className="col-span-12">
+        <div className="col-span-12" data-aos="fade-up">
           <div className="card">
             <div className="flex flex-col md:flex-row gap-y-5 md:gap-y-0 justify-between items-center">
               <div className="flex flex-col">
