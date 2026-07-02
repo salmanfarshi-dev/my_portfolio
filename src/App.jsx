@@ -9,6 +9,7 @@ import Contact from "./Page/Contact";
 import Footer from "./Layout/Footer";
 import Chatting from "./Component/Chatting";
 import Talkfy from './Page/Talkfy'
+import Exclusive from './Page/Exclusive'
 
 
 
@@ -36,6 +37,7 @@ function App() {
     <Routes>
       <Route path="/" element={<MainPage />} />
       <Route path="/talkify" element={<Talkfy/> }/>
+      <Route path="/exclusive" element={<Exclusive/>}/>
       
     </Routes>
 
