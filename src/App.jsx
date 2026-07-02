@@ -1,40 +1,48 @@
-import React from 'react'
-import Navbar from './Layout/Navbar'
-import Home from './Page/Home'
-import Skill from './Page/Skill'
-import Projects from './Page/Projects'
-import Services from './Page/Services'
-import Contact from './Page/Contact'
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Footer from './Layout/Footer'
-import Chatting from './Component/Chatting'
+import { Routes, Route } from "react-router-dom";
 
-function App() {
-    useEffect(() => {
-    AOS.init({
-      duration: 500,
-      once: true,
-      offset: 100,
-    });
-  }, []);
+import Navbar from "./Layout/Navbar";
+import Home from "./Page/Home";
+import Skill from "./Page/Skill";
+import Projects from "./Page/Projects";
+import Services from "./Page/Services";
+import Contact from "./Page/Contact";
+import Footer from "./Layout/Footer";
+import Chatting from "./Component/Chatting";
+import Talkfy from './Page/Talkfy'
+
+
+
+function MainPage() {
   return (
     <>
-     <Navbar/>
-
-     <div>
-      <Home/>
-      <Skill/>
-      <Projects/>
-      <Services/>
-      <Contact/>
-      <Footer/>
-    <Chatting/>
-
-     </div>
+      <Navbar />
+      <Home />
+      <Skill />
+      <Projects />
+      <Services />
+      <Contact />
+      <Footer />
+      <Chatting />
     </>
-  )
+  );
 }
 
-export default App
+function App() {
+  return (
+
+    
+<>
+
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/talkify" element={<Talkfy/> }/>
+      
+    </Routes>
+
+  
+
+</>
+  );
+}
+
+export default App;

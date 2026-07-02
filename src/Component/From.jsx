@@ -56,7 +56,7 @@ function From() {
               </Label>
               <Input
                 id="input-type-name"
-                placeholder="Yow-full"
+                placeholder="Your name"
                 type="text"
                 name="name"
                 className="w-full"
