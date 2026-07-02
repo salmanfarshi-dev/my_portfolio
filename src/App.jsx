@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from './Layout/Footer'
+import Chatting from './Component/Chatting'
 
 function App() {
     useEffect(() => {
@@ -29,7 +30,7 @@ function App() {
       <Services/>
       <Contact/>
       <Footer/>
-
+    <Chatting/>
 
      </div>
     </>

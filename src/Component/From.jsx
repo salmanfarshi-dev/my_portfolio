@@ -46,7 +46,7 @@ function From() {
     <>
       <div className="w-full md:w-250 bg-bg-card px-4 py-7 rounded-2xl shadow-[0_0_20px_rgba(255,255,250,0.1)] overflow-hidden" >
         <form ref={form} onSubmit={sendEmail}>
-          <div className="flex w-80 flex-col gap-4">
+          <div className="flex  flex-col gap-4">
             <div className="flex flex-col gap-1">
               <Label
                 htmlFor="input-type-name"
@@ -56,10 +56,10 @@ function From() {
               </Label>
               <Input
                 id="input-type-name"
-                placeholder="Your name"
+                placeholder="Yow-full"
                 type="text"
                 name="name"
-                className="md:w-120"
+                className="w-full"
               />
             </div>
             <div className="flex flex-col gap-1 ">
@@ -74,7 +74,7 @@ function From() {
                 placeholder="jane@example.com"
                 type="email"
                 name="email"
-                className="md:w-120"
+                className="w-full"
               />
             </div>
             <div className="flex flex-col gap-1  ">
@@ -87,7 +87,7 @@ function From() {
               <TextArea
                 name="message"
                 aria-label="Quick project update"
-                className="h-32 md:w-120"
+                className="h-32 w-full"
                 placeholder="Enter your message"
               />
             </div>
