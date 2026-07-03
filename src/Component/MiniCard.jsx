@@ -7,8 +7,8 @@ import { FaArrowRight } from "react-icons/fa";
 
 function MiniCard({Image,title,description,live,github}) {
   return (
-     <div className="w-full md:w-100 bg-bg-card  rounded-2xl border border-border hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] hover:border-primary/70 duration-300 overflow-hidden">
-          <div className="w-full h-70">
+     <div className="w-full md:w-90 lg:w-100 bg-bg-card  rounded-2xl border border-border hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] hover:border-primary/70 duration-300 overflow-hidden">
+          <div className="w-full h-70 md:h-50">
             <img src={Image} alt="" className="object-cover h-full w-full" />
           </div>
           <div className="px-4 py-6 mt-2">

@@ -5,7 +5,7 @@ function Arrow() {
     <>
      <div className="hidden md:block">
          <button
-        className=" prev-btn absolute -left-9 top-1/2 -translate-y-1/2 -translate-x-6 z-20
+        className=" prev-btn absolute top-1/2 -translate-y-1/2 -translate-x-6 z-20
         w-12 h-12 rounded-full bg-primary/20 border border-primary
         backdrop-blur-md hover:bg-primary transition flex items-center justify-center"
       >
@@ -15,7 +15,7 @@ function Arrow() {
 
       <div className="hidden md:block">
         <button
-        className=" next-btn absolute -right-5 top-1/2 -translate-y-1/2 translate-x-6 z-20
+        className=" next-btn absolute  md:right-4 top-1/2 -translate-y-1/2 translate-x-6 z-20
         w-12 h-12 rounded-full bg-primary/20 border border-primary
         backdrop-blur-md hover:bg-primary transition flex items-center justify-center"
       >

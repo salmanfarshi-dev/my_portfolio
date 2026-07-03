@@ -20,8 +20,8 @@ function MiniProjects() {
       : projects.filter((item) => item.category === active);
 
   return (
-    <div className=" mt-30 mb-0 md:mb-35.5">
-      <h1 className="text-2xl md:text-5xl text-center font-Jakarta font-semibold  ">
+    <div className=" mt-30 mb-0 md:mb-20 lg:mb-35.5">
+      <h1 className="text-2xl md:text-4xl lg:text-5xl text-center font-Jakarta font-semibold  ">
         {" "}
         Mini{" "}
         <span className="bg-gradient-to-r from-[#8d60f6] to-[#206ce6] bg-clip-text text-transparent">

@@ -16,7 +16,7 @@ function ServiceCard() {
   return (
     <section className="mt-15">
       <div className="grid grid-cols-12 gap-6">
-        <div className="col-span-12 md:col-span-8" >
+        <div className="col-span-12 md:col-span-6 lg:col-span-8" >
           <div className="card">
             <Icon
               icon={<FaReact className="text-2xl text-text-primary" />}
@@ -66,7 +66,7 @@ function ServiceCard() {
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-4" >
+        <div className="col-span-12 md:col-span-6 lg:col-span-4" >
           <div className="card">
             <Icon
               icon={<FaMobileAlt className="text-2xl text-text-primary" />}
@@ -89,7 +89,7 @@ function ServiceCard() {
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-4"  >
+        <div className="col-span-12 md:col-span-6 lg:col-span-4"  >
           <div className="card">
             <CardTittle head="My process" />
 
@@ -146,7 +146,7 @@ function ServiceCard() {
           </div>
         </div>
 
-        <div className="col-span-12 md:col-span-4" >
+        <div className="col-span-12 md:col-span-6 lg:col-span-4" >
           <div className="card">
             <Icon
               icon={<FiFigma className="text-primary text-2xl" />}
@@ -171,7 +171,7 @@ function ServiceCard() {
           </div>
         </div>
 
-        <div className="col-span-12 md:col-span-4" >
+        <div className="col-span-12 md:col-span-6 lg:col-span-4" >
           <div className="card">
             <Icon
               icon={<MdColorLens className="text-white text-2xl" />}
@@ -212,9 +212,9 @@ function ServiceCard() {
           </div>
         </div>
 
-        <div className="col-span-12" >
+        <div className="col-span-12 md:col-span-6 lg:col-span-12" >
           <div className="card">
-            <div className="flex flex-col md:flex-row gap-y-5 md:gap-y-0 justify-between items-center">
+            <div className="flex flex-col  lg:flex-row gap-y-5  lg:gap-y-0 justify-between items-center">
               <div className="flex flex-col">
                 <h4 className="text-3xl md:text-5xl md:leading-[55px] font-bold text-text-primary w-50 flex-wrap md:w-80">
                   Got a project?{" "}
@@ -222,7 +222,7 @@ function ServiceCard() {
                     Let's build it.
                   </span>
                 </h4>
-                <p className="text-text-secondary text-sm md:text-xl font-normal w-full md:w-150 mt-4">
+                <p className="text-text-secondary text-sm md:text-xl font-normal w-full lg:w-150 mt-4">
                   Actively learning and continuously improving, while always
                   ready to take on real-world projects.
                 </p>

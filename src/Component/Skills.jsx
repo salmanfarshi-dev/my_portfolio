@@ -21,7 +21,7 @@ function Skills() {
           </div>
         </div>
 
-        <div className="mt-8 flex gap-x-7 md:gap-x-20 items-center">
+        <div className="mt-8 flex gap-x-7 lg:gap-x-20 items-center">
             <div className="flex flex-col gap-y-3">
                 <SkillItems/>
                 

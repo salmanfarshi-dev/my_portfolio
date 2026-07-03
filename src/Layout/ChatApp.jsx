@@ -9,7 +9,7 @@ function ChatApp() {
             
             <div className="w-full md:w-1/2">
               <Link to="talkify">
-              <h5 className='text-2xl md:text-[45px] leading-tight font-medium w-full text-center md:w-[90%]'>Talkfy is a real-time messaging platform that I developed with a focus on speed, simplicity, and a seamless user experience</h5>
+              <h5 className='text-2xl md:text-3xl lg:text-[45px] leading-tight font-medium w-full text-center md:w-[90%]'>Talkfy is a real-time messaging platform that I developed with a focus on speed, simplicity, and a seamless user experience</h5>
               </Link>
             </div>
 

@@ -9,7 +9,7 @@ function Home() {
     <Element name="home">
       <section
         id="home"
-        className="min-h-screen max-w-330 mx-auto md:pt-20 mt-30 px-4 md:px-0"
+        className="min-h-screen md:w-[90%] max-w-330 mx-auto lg:pt-20 mt-30 px-4 md:px-0"
       >
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="">
@@ -19,7 +19,7 @@ function Home() {
               </span>
               Salman Farshi
             </h1>
-            <p className="text-text-secondary text-[16px] md:text-[18px] font-normal w-full md:w-[65%] md:mt-5 mt-3 ">
+            <p className="text-text-secondary text-[16px] lg:text-[18px] font-normal w-full md:w-[65%] md:mt-5 mt-3 ">
               I’m a{" "}
               <span className="text-accent font-medium">
                 Frontend Web Developer

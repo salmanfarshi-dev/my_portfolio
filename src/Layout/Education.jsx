@@ -12,14 +12,14 @@ function Education() {
    <>
     <HeadTittle  tittle="Skills"/>
     <HeadPera pera="My technical level"/>
-    <div className="flex flex-col md:flex-row gap-y-5  gap-x-20 mt-15">
-      <div className="md:w-130 bg-bg-card px-6 py-10 rounded-[20px] border border-border flex-1 " >
+    <div className="flex flex-col md:flex-row lg:flex-row gap-y-5  gap-x-20 md:gap-x-5 mt-8">
+      <div className="md:w-100 lg:w-130 bg-bg-card px-6 md:px-3 py-10 md:py-5 rounded-[20px] border border-border flex-1 " >
         <div className="flex gap-x-4">
           <div className="w-14 h-14 rounded-md bg-primary/10 flex justify-center items-center border border-border-hover">
-            <FaGraduationCap className="text-2xl md:text-3xl text-primary" />
+            <FaGraduationCap className="text-2xl  md:text-3xl text-primary" />
           </div>
           <div className="flex flex-col">
-            <h3 className="text-text-primary text-2xl md:text-3xl font-Jakarta font-semibold">
+            <h3 className="text-text-primary text-2xl md:text-[26px] lg:text-3xl font-Jakarta font-semibold">
               Education
             </h3>
             <p className="text-text-secondary font-medium ">
@@ -85,7 +85,7 @@ function Education() {
         </div>
       </div>
 
-      <div className="md:w-130 bg-bg-card px-6 py-10 rounded-[20px] border border-border items-stretch" > 
+      <div className="lg:w-130 bg-bg-card px-6 py-10 rounded-[20px] border border-border items-stretch" > 
         <Skills />
       </div>
     </div>

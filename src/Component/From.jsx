@@ -44,7 +44,7 @@ function From() {
 
   return (
     <>
-      <div className="w-full md:w-250 bg-bg-card px-4 py-7 rounded-2xl shadow-[0_0_20px_rgba(255,255,250,0.1)] overflow-hidden" >
+      <div className="w-full md:w-290 lg:w-250 bg-bg-card px-4 py-7 rounded-2xl shadow-[0_0_20px_rgba(255,255,250,0.1)] overflow-hidden" >
         <form ref={form} onSubmit={sendEmail}>
           <div className="flex  flex-col gap-4">
             <div className="flex flex-col gap-1">
