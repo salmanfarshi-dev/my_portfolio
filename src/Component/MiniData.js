@@ -94,7 +94,7 @@ export const projects = [
   
   {
     id: 9,
-    title: "Facebook Demo",
+    title: "Select Box",
     category: "JavaScript",
     description: "JavaScript",
     image: JavaScriptsix,
@@ -103,7 +103,7 @@ export const projects = [
   },
   {
     id: 10,
-    title: "Select Box",
+    title: "Game",
     category: "JavaScript",
     description: "JavaScript",
     image: JavaScriptseven,
