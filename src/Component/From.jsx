@@ -4,6 +4,8 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import { Input, Label, TextArea, Button, Spinner } from "@heroui/react";
+import { GrSend } from "react-icons/gr";
+
 
 function From() {
   const form = useRef();
@@ -44,13 +46,22 @@ function From() {
 
   return (
     <>
-      <div className="w-full md:w-290 lg:w-250 bg-bg-card px-4 py-7 rounded-2xl shadow-[0_0_20px_rgba(255,255,250,0.1)] overflow-hidden" >
+      <div className="w-full md:w-290 lg:w-250 bg-transparent px-6 py-7 rounded-2xl overflow-hidden border border-primary shadow-[inset_0_0_55px_rgba(59,130,246,0.3)]" >
+
+        <div className="flex gap-x-4">
+          <GrSend className="text-4xl text-primary drop-shadow-[0_0_8px_rgba(59,130,246,0.6)]"/>
+
+          <div className="flex flex-col">
+               <h3 className="text-text-primary text-2xl font-medium font-Jakarta">Send Me a Message</h3>
+               <p className="text-sm text-text-secondary mt-1">I'll get back to you as soon as posible.</p>
+          </div>
+        </div>
         <form ref={form} onSubmit={sendEmail}>
-          <div className="flex  flex-col gap-4">
+          <div className="flex  flex-col mt-6 gap-4">
             <div className="flex flex-col gap-1">
               <Label
                 htmlFor="input-type-name"
-                className="text-white font-medium text-xl"
+                className="text-white font-medium text-[16px]"
               >
                 Name
               </Label>
@@ -59,13 +70,13 @@ function From() {
                 placeholder="Your name"
                 type="text"
                 name="name"
-                className="w-full"
+                className="w-full bg-transparent border border-primary/30 text-white py-3"
               />
             </div>
             <div className="flex flex-col gap-1 ">
               <Label
                 htmlFor="input-type-email"
-                className="text-white font-medium text-xl"
+                className="text-white font-medium text-[16px]"
               >
                 Email
               </Label>
@@ -74,39 +85,42 @@ function From() {
                 placeholder="jane@example.com"
                 type="email"
                 name="email"
-                className="w-full"
+                className="w-full bg-transparent border border-primary/30 text-white py-3"
               />
             </div>
             <div className="flex flex-col gap-1  ">
               <Label
                 htmlFor="input-type-password"
-                className="text-white font-medium text-xl"
+                className="text-white font-medium text-[16px]"
               >
                 Message
               </Label>
               <TextArea
                 name="message"
                 aria-label="Quick project update"
-                className="h-32 w-full"
+                className="h-32 w-full bg-transparent border border-primary/30 text-white py-3"
                 placeholder="Enter your message"
               />
             </div>
           </div>
-          <div className="text-center">
+          
             <Button
               type="submit"
               isDisabled={loading}
-              className="text-[16px] md:py-5 md:px-7 mt-5 bg-primary hover:bg-primary-hover duration-300"
+              className="text-[16px] md:py-6.5 md:px-7 mt-5 bg-primary hover:bg-primary-hover duration-300 w-full drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]"
             >
               {loading ? (
                 <Spinner size="sm" color="current" />
               ) : (
                 <>
-                  Send Message <IoSend />
+                  <GrSend className="size-5 mr-2"/>
+                  Send Message 
                 </>
               )}
             </Button>
-          </div>
+
+            <p className="mt-4 text-xs text-text-secondary text-center">Your information is 100% secure and will never be shared.</p>
+         
         </form>
       </div>
 
