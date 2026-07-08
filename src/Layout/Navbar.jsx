@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink, useLocation } from "react-router-dom";
 import { IoMenuSharp } from "react-icons/io5";
 
 import { IoClose } from "react-icons/io5";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
 
   const navItems = [
     { title: "Home", to: "home" },
@@ -25,17 +27,23 @@ function Navbar() {
         <ul className="hidden md:flex items-center md:gap-x-3  lg:gap-8">
           {navItems.map((item) => (
             <li key={item.to}>
-              <Link
-                to={item.to}
-                spy={true}
-                smooth={true}
-                offset={-80}
-                duration={500}
-                activeClass="active"
-                className="navbar"
-              >
-                {item.title}
-              </Link>
+              {location.pathname === "/" ? (
+                <ScrollLink
+                  to={item.to}
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                  activeClass="active"
+                  className="navbar"
+                >
+                  {item.title}
+                </ScrollLink>
+              ) : (
+                <RouterLink to="/" className="navbar">
+                  {item.title}
+                </RouterLink>
+              )}
             </li>
           ))}
         </ul>
@@ -55,18 +63,23 @@ function Navbar() {
           <ul className="flex flex-col items-center gap-6">
             {navItems.map((item) => (
               <li key={item.to}>
-                <Link
-                  to={item.to}
-                  spy={true}
-                  smooth={true}
-                  offset={-120}
-                  duration={500}
-                  activeClass="active"
-                  onClick={() => setOpen(false)}
-                  className="navbar"
-                >
-                  {item.title}
-                </Link>
+                {location.pathname === "/" ? (
+                  <ScrollLink
+                    to={item.to}
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}
+                    activeClass="active"
+                    className="navbar"
+                  >
+                    {item.title}
+                  </ScrollLink>
+                ) : (
+                  <RouterLink to="/" className="navbar">
+                    {item.title}
+                  </RouterLink>
+                )}
               </li>
             ))}
           </ul>
