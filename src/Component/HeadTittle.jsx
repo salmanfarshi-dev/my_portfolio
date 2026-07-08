@@ -1,8 +1,8 @@
 import React from 'react'
 
-function HeadTittle({tittle}) {
+function HeadTittle({tittle,className}) {
   return (
-    <h4 className="text-3xl md:text-4xl lg:text-6xl text-center font-Jakarta font-semibold text-text-primary" >{tittle}</h4>
+    <h4 className={`text-3xl md:text-4xl lg:text-6xl text-center font-Jakarta font-semibold text-text-primary ${className}`} >{tittle}</h4>
   )
 }
 
