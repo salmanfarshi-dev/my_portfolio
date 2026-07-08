@@ -138,7 +138,7 @@ function From() {
          <div className="flex items-center mt-4 justify-center  gap-x-2">
           <LuShieldAlert className="text-primary"/>
 
-           <p className="text-xs text-text-secondary"> 
+           <p className="text-xs text-text-secondary text-center"> 
             Your information is 100% secure and will never be shared.
           </p>
          </div>

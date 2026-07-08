@@ -22,7 +22,7 @@ function ContactList() {
     <h5 className=' text-2xl md:text-4xl font-semibold text-text-primary'>I'd love to hear from you!</h5>
     <p className='mt-2 text-[16px] md:text-[18px] md:w-[70%] w-full flex-wrap text-text-secondary font-normal'>Have a project in mind or looking for a Frontend Developer? Feel free to reach out. I'm always open to discussing new opportunities, freelance projects, and creative collaborations.</p>
     <div className="flex flex-col mt-3 gap-y-2">
-      <div className="flex items-center gap-x-3 bg-bg-secondary py-2 px-4 w-[40%] rounded-[10px] border border-border">
+      <div className="flex items-center gap-x-3 bg-bg-secondary py-2 px-4 lg:lg:w-[40%] rounded-[10px] border border-border">
         <div className="w-10 h-10 bg-primary flex justify-center items-center rounded-[10px]">
           <TfiEmail />
 
@@ -32,7 +32,7 @@ function ContactList() {
           <p className='font-light text-text-secondary'>salmanfarshidevel@gmail.com</p>
         </div>
       </div>
-      <div className="flex items-center gap-x-3 bg-bg-secondary py-2 px-4 w-[40%] rounded-[10px] border border-border">
+      <div className="flex items-center gap-x-3 bg-bg-secondary py-2 px-4 lg:w-[40%] rounded-[10px] border border-border">
         <div className="w-10 h-10 bg-blue-600 flex justify-center items-center rounded-[10px]">
           <FaPhoneVolume />
 
@@ -42,7 +42,7 @@ function ContactList() {
           <p className='font-light text-text-secondary'>+8801324385585</p>
         </div>
       </div>
-      <div className="flex items-center gap-x-3 bg-bg-secondary py-2 px-4 w-[40%] rounded-[10px] border border-border">
+      <div className="flex items-center gap-x-3 bg-bg-secondary py-2 px-4 lg:w-[40%] rounded-[10px] border border-border">
         <div className="w-10 h-10 bg-green-400 flex justify-center items-center rounded-[10px]">
           <FaLocationDot />
 
@@ -53,7 +53,7 @@ function ContactList() {
           <p className='font-light text-text-secondary'>Dhaka,Bangladesh</p>
         </div>
       </div>
-      <div className="flex items-center gap-x-3 bg-bg-secondary py-2 px-4 w-[40%] rounded-[10px] border border-border">
+      <div className="flex items-center gap-x-3 bg-bg-secondary py-2 px-4 lg:w-[40%] rounded-[10px] border border-border">
         <div className="w-10 h-10 bg-orange-400 flex justify-center items-center rounded-[10px]">
           <IoTime />
 
@@ -65,7 +65,7 @@ function ContactList() {
       </div>
     </div>
 
-    <div className="mt-3">
+    <div className="mt-3 flex flex-col justify-center items-center md:justify-start md:items-start">
       <p className='text-text-primary font-normal '>Find me on</p>
        <div className=" flex pt-2 gap-x-4 items-center">
   <a

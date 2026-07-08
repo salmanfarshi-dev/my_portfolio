@@ -34,7 +34,7 @@ function App() {
     
 <>
 
-      <Navbar/>
+    
     <Routes>
       <Route path="/" element={<MainPage />} />
       <Route path="/talkify" element={<Talkfy/> }/>

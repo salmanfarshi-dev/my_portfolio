@@ -13,8 +13,8 @@ function Contact() {
           <div className="w-3 h-3 rounded-full bg-primary drop-shadow-[0_0_8px_rgba(59,130,246,0.9)]"></div>
           <p className='text-sm text-primary font-medium '>Contact Me</p>
          </div>
-      <HeadTittle tittle="Let's Build Something Amazing Together" className="md:w-[50%] text-[45px]! leading-[55px] mx-auto"/>
-      <HeadPera pera="Have aproject in mind ? I'm available for work, internships and full-time oportunities" className="lg:w-[35%] text-[18px]! mx-auto"/>
+      <HeadTittle tittle="Let's Build Something Amazing Together" className="w-full md:w-[50%] md:text-[45px]! md:leading-[55px] mx-auto"/>
+      <HeadPera pera="Have aproject in mind ? I'm available for work, internships and full-time oportunities" className="lg:w-[35%] text-[16px] md:ext-[18px]! mx-auto"/>
 
 <ContactUs/>
        
