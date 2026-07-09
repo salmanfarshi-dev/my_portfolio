@@ -98,7 +98,9 @@
 
 
 
-
+@utility tech{
+  @apply  px-3 py-2 border border-primary/30 bg-bg-card rounded-[10px]
+}
 
 
 

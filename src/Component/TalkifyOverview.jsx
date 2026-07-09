@@ -20,7 +20,7 @@ function TalkifyOverview() {
                 </div>
                 <p className='text-[18px] font-medium tracking-tight text-text-primary'>Project Overview</p>
             </div>
-            <p className='mt-2 text-[16px] text-text-secondary/60 w-full lg:w-[50%]'>Talkify is a frontend chat application designed to provide a modern and responsive messaging experience. Built with React and Firebase, it includes user authentication, real-time messaging, and a clean interface that works seamlessly across desktop and mobile devices.</p>
+            <p className='mt-2 text-[16px] text-text-secondary/60 w-full lg:w-[70%]'>Talkify is a frontend chat application designed to provide a modern and responsive messaging experience. Built with React and Firebase, it includes user authentication, real-time messaging, and a clean interface that works seamlessly across desktop and mobile devices.</p>
         </div>
 
 
@@ -33,13 +33,13 @@ function TalkifyOverview() {
 
             </div>
             <div className="flex flex-col gap-y-2 text-center items-center">
-                <GrShieldSecurity  className='drop-shadow-[0_0_8px_rgba(59,130,246,0.6)] text-primary text-2xl'/>
+                <IoIosTimer  className='drop-shadow-[0_0_8px_rgba(59,130,246,0.6)] text-primary text-2xl'/>
                 <h6 className='text-sm md:text-xl font-semibold text-text-primary'>Real-time</h6>
                 <p className='text-xs md:text-sm text-text-secondary'>Messaging</p>
 
             </div>
             <div className="flex flex-col gap-y-2 text-center items-center">
-                <IoIosTimer  className='drop-shadow-[0_0_8px_rgba(59,130,246,0.6)] text-primary text-2xl'/>
+                <GrShieldSecurity  className='drop-shadow-[0_0_8px_rgba(59,130,246,0.6)] text-primary text-2xl'/>
                 <h6 className='text-sm md:text-xl font-semibold text-text-primary'>Secure</h6>
                 <p className='text-xs md:text-sm text-text-secondary'>Authentication</p>
 

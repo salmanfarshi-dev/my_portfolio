@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom';
 import { TbWorld } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import TalkifyOverview from '../Component/TalkifyOverview';
+import Features from '../Component/Features';
+import { BsStack } from "react-icons/bs";
+import { FaArrowLeft } from "react-icons/fa6";
 
 
 
@@ -99,6 +102,46 @@ function Talkfy() {
 
   <div className="mt-14 md:mt-[140px]">
     <TalkifyOverview/>
+  </div>
+  <Features/>
+
+  <div className="mt-8 ">
+     <div className="flex justify-center gap-x-3 items-center ">
+            <BsStack  className="text-primary text-xl drop-shadow-[0_0_8px_rgba(59,130,246,0.6)]" />
+            <p className="text-text-primary font-Jakarta text-xl font-semibold">
+              Tech Stack
+            </p>
+          </div>
+
+          <div className="mt-5 flex flex-wrap justify-center gap-4">
+            <div className="tech">
+              <p>React Js</p>
+
+            </div>
+            <div className="tech">
+              <p>Tailwind CSS</p>
+
+            </div>
+            <div className="tech">
+              <p>React Router</p>
+
+            </div>
+            <div className="tech">
+              <p>React Icons</p>
+
+            </div>
+            <div className="tech">
+              <p>Vite</p>
+
+            </div>
+          </div>
+  </div>
+
+  <div className="mt-30 mb-10 flex justify-center">
+  <Link to="/">
+       <Button startIcon={<FaArrowLeft />
+} sx={{padding:"10px 20px", textTransform:"capitalize", fontSize:"18px"}} variant="contained">Back Home</Button>
+  </Link>
   </div>
 
 
