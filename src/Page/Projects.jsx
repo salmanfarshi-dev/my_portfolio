@@ -20,7 +20,7 @@ function Projects() {
 <HeadPera pera="A collection of frontend projects showcasing responsive design, clean code, and modern web development practices." className="w-full md:w-[50%] mx-auto"/>
 
 
-        <div className="flex flex-col gap-y-10 md:gap-y-16 lg:gap-y-30 md:mt-10 mt-16">
+        <div className="flex flex-col gap-y-10 md:gap-y-16 lg:gap-y-20 md:mt-10 mt-16">
             <Ecommerce/>
             <ChatApp/>
         </div>
