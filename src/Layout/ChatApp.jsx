@@ -1,5 +1,5 @@
 import React from 'react'
-import ChattingImage from '../assets/chattingapp.png'
+import ChattingImage from '../assets/chatingapp.png'
 import { Link } from 'react-router-dom'
 
 function ChatApp() {
