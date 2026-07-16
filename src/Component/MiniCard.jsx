@@ -17,7 +17,7 @@ function MiniCard({Image,title,description,live,github}) {
             <div className="flex gap-x-3 mt-3">
               <a href={live}>
                 <Button
-                  className="bg-primary/20 text-white rounded-[10px] border border-primary/40 hover:bg-primary hover:border-primary/80 duration-300"
+                  className="hover:bg-primary/20 text-white rounded-[10px] border border-primary/40 bg-primary hover:border-primary/80 duration-300"
                   variant="secondary"
                 >
                   Live Demo <LuSquareArrowUpRight />

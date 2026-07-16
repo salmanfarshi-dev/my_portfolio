@@ -10,13 +10,13 @@ import { MdColorLens } from "react-icons/md";
 import Button from "@mui/material/Button";
 import { RiArrowRightUpBoxLine } from "react-icons/ri";
 import ButtonGroup from "../Component/ButtonGroup";
-
+import { Link } from "react-router-dom";
 
 function ServiceCard() {
   return (
     <section className="mt-15">
       <div className="grid grid-cols-12 gap-6">
-        <div className="col-span-12 md:col-span-6 lg:col-span-8" >
+        <div className="col-span-12 md:col-span-6 lg:col-span-8">
           <div className="card">
             <Icon
               icon={<FaReact className="text-2xl text-text-primary" />}
@@ -66,7 +66,7 @@ function ServiceCard() {
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-6 lg:col-span-4" >
+        <div className="col-span-12 md:col-span-6 lg:col-span-4">
           <div className="card">
             <Icon
               icon={<FaMobileAlt className="text-2xl text-text-primary" />}
@@ -89,7 +89,7 @@ function ServiceCard() {
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-6 lg:col-span-4"  >
+        <div className="col-span-12 md:col-span-6 lg:col-span-4">
           <div className="card">
             <CardTittle head="My process" />
 
@@ -146,7 +146,7 @@ function ServiceCard() {
           </div>
         </div>
 
-        <div className="col-span-12 md:col-span-6 lg:col-span-4" >
+        <div className="col-span-12 md:col-span-6 lg:col-span-4">
           <div className="card">
             <Icon
               icon={<FiFigma className="text-primary text-2xl" />}
@@ -171,7 +171,7 @@ function ServiceCard() {
           </div>
         </div>
 
-        <div className="col-span-12 md:col-span-6 lg:col-span-4" >
+        <div className="col-span-12 md:col-span-6 lg:col-span-4">
           <div className="card">
             <Icon
               icon={<MdColorLens className="text-white text-2xl" />}
@@ -192,31 +192,34 @@ function ServiceCard() {
               <Tools tool="React" />
               <Tools tool="Animation" />
             </div>
-            <Button
-              className="mt-5!"
-              sx={{
-                borderRadius: "20px",
-                textTransform: "capitalize",
-                fontSize: { md: "16px" },
-                padding: "8px 0",
-                backgroundColor: "#3B82F6",
-                "&:hover": {
-                  backgroundColor: "#2563EB",
-                },
-              }}
-              variant="contained"
-              endIcon={<RiArrowRightUpBoxLine />}
-            >
-              View simple
-            </Button>
+            <Link to="landing-pages">
+              <Button
+                className="mt-5!"
+                sx={{
+                  width: "100%",
+                  borderRadius: "20px",
+                  textTransform:"capitalize",
+                  fontSize: { md: "16px" },
+                  padding: "8px 0",
+                  backgroundColor: "#3B82F6",
+                  "&:hover": {
+                    backgroundColor: "#2563EB",
+                  },
+                }}
+                variant="contained"
+                endIcon={<RiArrowRightUpBoxLine />}
+              >
+                View simple
+              </Button>
+            </Link>
           </div>
         </div>
 
-        <div className="col-span-12 md:col-span-6 lg:col-span-12" >
+        <div className="col-span-12 md:col-span-6 lg:col-span-12">
           <div className="card">
             <div className="flex flex-col  lg:flex-row gap-y-5  lg:gap-y-0 justify-between items-center">
               <div className="flex flex-col">
-                <h4 className="text-3xl md:text-5xl md:leading-[55px] font-bold text-text-primary w-50 flex-wrap md:w-80">
+                <h4 className="text-3xl md:text-5xl md:leading-13.75 font-bold text-text-primary w-50 flex-wrap md:w-80">
                   Got a project?{" "}
                   <span className="italic font-normal text-primary font-Jakarta">
                     Let's build it.
@@ -228,8 +231,7 @@ function ServiceCard() {
                 </p>
               </div>
               <div>
-                <ButtonGroup/>
-               
+                <ButtonGroup />
               </div>
             </div>
           </div>

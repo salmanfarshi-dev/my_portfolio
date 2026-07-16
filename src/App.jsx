@@ -8,6 +8,7 @@ import Services from "./Page/Services";
 import Contact from "./Page/Contact";
 import Footer from "./Layout/Footer";
 import Chatting from "./Component/Chatting";
+import LandingPages from "./Page/LandingPages";
 
 
 
@@ -23,6 +24,7 @@ function MainPage() {
       <Contact />
       <Footer />
       <Chatting />
+      
     </>
   );
 }
@@ -36,6 +38,7 @@ function App() {
     
     <Routes>
       <Route path="/" element={<MainPage />} />
+      <Route path="landing-pages" element={ <LandingPages/> }/>
       
       
     </Routes>

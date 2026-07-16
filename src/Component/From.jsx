@@ -98,7 +98,7 @@ function From() {
                   name="email"
                   className="w-full bg-transparent border border-primary/30 text-white py-3 pl-8 focus:pl-2 transition-all duration-300"
                 />
-                <TfiEmail  className=" absolute top-1/2 -translate-y-1/2 left-2 text-text-secondary/80 transition-all group-focus-within:opacity-0 group-focus-within:translate-x-2" />
+                <TfiEmail  className=" absolute top-1/2 -translate-y-1/2 left-2 text-text-secondary/80 transition-all group-focus-within:opacity-0 group-focus-within:translate-x-2 " />
               </div>
             </div>
             <div className="flex flex-col gap-1  ">

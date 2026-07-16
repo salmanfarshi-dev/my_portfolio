@@ -9,7 +9,7 @@ function Home() {
     <Element name="home">
       <section
         id="home"
-        className="min-h-screen md:w-[90%] max-w-330 mx-auto lg:pt-20 mt-30 px-4 md:px-0"
+        className="min-h-screen md:w-[90%] max-w-330 mx-auto lg:pt-20 mt-20 px-4 md:px-0"
       >
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="">
