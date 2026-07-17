@@ -23,7 +23,7 @@ function LandingPages() {
     </div>
 
 
-    <div className="mt-20 grid grid-cols-3 gap-6 items-center flex-wrap">
+    <div className="mt-20  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center flex-wrap">
         {
             LandingApidata.slice(0,show).map(item=>(
                 <LandingCard 
