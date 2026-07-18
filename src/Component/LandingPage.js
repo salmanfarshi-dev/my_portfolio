@@ -1,16 +1,17 @@
 
 
 const landingapi =[
-    {
+  {
       id:1,
-      image: '/finsweet.png',
-      link:"https://salmanfarshi-dev.github.io/Finsweet/",
-      tittle:"Finsweet",
-      description: "A modern business website featuring a clean layout, engaging sections, and a user-focused design that delivers a smooth browsing experience.",
+      image: '/innovate.png',
+      link:"https://salmanfarshi-dev.github.io/Innovate",
+      tittle:"Innovate",
+      description: "A visually engaging digital agency website that combines modern design, strategic content sections, and a refined user experience to showcase services, portfolio, and business growth with clarity and professionalism.",
       firsttools:"HTML",
-      secondtools:"CSS",
-      thirdtools:"Bootstrap"
+      secondtools:"Bootstrap ",
+      thirdtools:"CSS"
     },
+   
     {
       id:2,
       image: '/finance.png',
@@ -41,15 +42,15 @@ const landingapi =[
       secondtools:"Tailwind CSS",
       thirdtools:"JavaScript"
     },
-    {
+     {
       id:5,
-      image: '/innovate.png',
-      link:"https://salmanfarshi-dev.github.io/Innovate",
-      tittle:"Innovate",
-      description: "A visually engaging digital agency website that combines modern design, strategic content sections, and a refined user experience to showcase services, portfolio, and business growth with clarity and professionalism.",
+      image: '/finsweet.png',
+      link:"https://salmanfarshi-dev.github.io/Finsweet/",
+      tittle:"Finsweet",
+      description: "A modern business website featuring a clean layout, engaging sections, and a user-focused design that delivers a smooth browsing experience.",
       firsttools:"HTML",
-      secondtools:"Bootstrap ",
-      thirdtools:"CSS"
+      secondtools:"CSS",
+      thirdtools:"Bootstrap"
     },
     {
       id:6,
