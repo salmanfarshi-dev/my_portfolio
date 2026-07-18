@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { IoMenuSharp } from "react-icons/io5";
-
 import { IoClose } from "react-icons/io5";
 
 function Navbar() {
@@ -19,10 +18,10 @@ function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full  bg-bg-card shadow-md shadow-primary/20 z-9999">
-      <div className=" md:w-[90%]  max-w-330 mx-auto px-4 md:px-4 h-20 flex justify-between items-center relative">
-        <h1 className=" text-2xl lg:text-3xl font-semibold font-Jakarta text-primary">
-          Salman Farshi
-        </h1>
+      <div className=" md:w-[90%]  max-w-330 mx-auto px-4 md:px-4 py-3 md:py-0 md:h-20 flex justify-between items-center relative">
+        <div className="">
+          <img src="/public/favicon.ico" alt="" className="lg:w-full w-10"/>
+        </div>
 
         <ul className="hidden md:flex items-center md:gap-x-3  lg:gap-8">
           {navItems.map((item) => (
