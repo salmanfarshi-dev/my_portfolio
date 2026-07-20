@@ -19,8 +19,9 @@ function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full  bg-bg-card shadow-md shadow-primary/20 z-9999">
       <div className=" md:w-[90%]  max-w-330 mx-auto px-4 md:px-4 py-3 md:py-0 md:h-20 flex justify-between items-center relative">
-        <div className="">
-          <img src="/favicon.ico" alt="" className="lg:w-full w-10"/>
+        <div className="flex items-center  gap-x-3">
+         
+          <h1 className="font-semibold font-Jakarta bg-gradient-to-r from-[#8B5CF6] to-[#3B82F6] bg-clip-text text-xl md:text-2xl lg:text-3xl  text-transparent">Salman Farshi</h1>
         </div>
 
         <ul className="hidden md:flex items-center md:gap-x-3  lg:gap-8">
