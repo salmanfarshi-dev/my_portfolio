@@ -22,7 +22,7 @@ function ContactList() {
     <h5 className=' text-2xl md:text-4xl font-semibold text-text-primary'>I'd love to hear from you!</h5>
     <p className='mt-2 text-[16px] md:text-[18px] md:w-[70%] w-full flex-wrap text-text-secondary font-normal'>Have a project in mind or looking for a Frontend Developer? Feel free to reach out. I'm always open to discussing new opportunities, freelance projects, and creative collaborations.</p>
 
-    <div className='flex items-center gap-x-4 flex-col-reverse lg:flex-row'>
+    <div className='flex items-center gap-x-4 flex-col-reverse lg:flex-row mt-5 md:mt-10'>
     <div className="flex flex-col mt-3 gap-y-2 lg:border-r border-border lg:pr-10">
       <div className="flex items-center gap-x-3 bg-bg-secondary py-2 px-4 lg:lg:w-[100%] rounded-[10px] border border-border">
         <div className="w-10 h-10 bg-primary flex justify-center items-center rounded-[10px]">
