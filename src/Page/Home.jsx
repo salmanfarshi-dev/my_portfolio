@@ -33,7 +33,8 @@ function Home() {
             <div className="flex gap-x-4 items-center mt-7">
               <Button
                 component="a"
-                href=""
+                href="/src/assets/Salman_farshi-CV.pdf"
+                target="_blank"
                 download
                 variant="contained"
                 sx={{
