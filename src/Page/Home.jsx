@@ -3,6 +3,7 @@ import { Element } from "react-scroll";
 import Button from "@mui/material/Button";
 import Salman from "../assets/salman.jpeg";
 import { Link } from "react-scroll";
+import CV from '../assets/Salman_farshi-CV.pdf'
 
 function Home() {
   return (
@@ -33,7 +34,7 @@ function Home() {
             <div className="flex gap-x-4 items-center mt-7">
               <Button
                 component="a"
-                href="/src/assets/Salman_farshi-CV.pdf"
+                href={CV}
                 target="_blank"
                 download
                 variant="contained"
