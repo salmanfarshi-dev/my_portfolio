@@ -3,7 +3,7 @@ import { Element } from "react-scroll";
 import Button from "@mui/material/Button";
 import Salman from "../assets/salman.jpeg";
 import { Link } from "react-scroll";
-import CV from '../assets/Salman_farshi-CV.pdf'
+import CV from '../assets/Salman-farshi-CV.pdf'
 
 function Home() {
   return (
