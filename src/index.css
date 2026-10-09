@@ -1,108 +1,99 @@
 @import "tailwindcss";
-@import "@heroui/styles"; 
+@import "@heroui/styles";
 
-
-
-
-
-@utility navbar{
-    @apply font-Inter font-normal md:text-base lg:text-[20px] hover:text-primary/90 duration-300 cursor-pointer ;
+@utility navbar {
+  @apply font-Inter font-normal md:text-base lg:text-[20px] hover:text-primary/90 duration-300 cursor-pointer;
 }
 
-@utility tittle{
+@utility tittle {
   @apply text-[50px] leading-[60px] md:leading-normal md:text-[55px] lg:text-[60px] font-semibold font-Jakarta bg-gradient-to-r from-[#8B5CF6] to-[#3B82F6] bg-clip-text text-transparent;
 }
 
-@utility image{
+@utility image {
   @apply md:w-180 lg:w-200 w-70 h-80 md:h-80 lg:h-125 rounded-[20px] mt-16 md:mt-0 object-cover overflow-hidden md:rotate-[5deg] shadow-[0_0_50px_rgba(0,0,0,0.3)] shadow-primary/30 hover:rotate-0 duration-300 hover:shadow-[0_0_50px_rgba(0,0,0,0.5)] hover:shadow-primary/40;
 }
 
-@utility card{
+@utility card {
   @apply bg-bg-card border border-border rounded-[20px] px-6 py-10 hover:bg-primary/20 h-full hover:-translate-y-0.5 hover:border-border-hover duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.2)];
 }
 
-@utility myprocess{
+@utility myprocess {
   @apply bg-cyan-200/20 border border-cyan-200 text-cyan-400 font-semibold md:w-12! w-10! h-10! md:h-12!;
 }
 
-
-@utility iconlist{
-  @apply md:w-10  md:h-10  w-10 h-10 bg-transparent rounded-full border border-[#22D3EE] flex justify-center items-center hover:border-transparent hover:bg-[#22D3EE] duration-300 text-[#22D3EE] hover:text-bg-primary text-[16px] md:text-xl cursor-pointer
+@utility iconlist {
+  @apply md:w-10  md:h-10  w-10 h-10 bg-transparent rounded-full border border-[#22D3EE] flex justify-center items-center hover:border-transparent hover:bg-[#22D3EE] duration-300 text-[#22D3EE] hover:text-bg-primary text-[16px] md:text-xl cursor-pointer;
 }
 
-
 @theme {
-
   /* ==========================
       BACKGROUND COLORS
      ========================== */
 
-  --color-bg-primary: #0B1120;      /* Main website background (Body) */
+  --color-bg-primary: #0b1120; /* Main website background (Body) */
 
-  --color-bg-secondary: #111827;    /* Alternate section background (About, Contact, etc.) */
+  --color-bg-secondary: #111827; /* Alternate section background (About, Contact, etc.) */
 
-  --color-bg-card: #1E293B;         /* Cards (Projects, Skills, Services, Experience) */
-
+  --color-bg-card: #1e293b; /* Cards (Projects, Skills, Services, Experience) */
 
   /* ==========================
       BRAND COLORS
      ========================== */
 
-  --color-primary: #3B82F6;         /* Primary brand color (Buttons, Active Links, Icons, CTA) */
+  --color-primary: #3b82f6; /* Primary brand color (Buttons, Active Links, Icons, CTA) */
 
-  --color-primary-hover: #2563EB;   /* Hover state for primary buttons and links */
+  --color-primary-hover: #2563eb; /* Hover state for primary buttons and links */
 
-  --color-accent: #8B5CF6;          /* Accent color (Gradient, Highlights, Small UI Elements) */
-
+  --color-accent: #8b5cf6; /* Accent color (Gradient, Highlights, Small UI Elements) */
 
   /* ==========================
       TEXT COLORS
      ========================== */
 
-  --color-text-primary: #F8FAFC;    /* Main headings (Hero Title, Section Title, Card Title) */
+  --color-text-primary: #f8fafc; /* Main headings (Hero Title, Section Title, Card Title) */
 
-  --color-text-secondary: #CBD5E1;  /* Paragraphs, Descriptions, Normal Content */
-
-
+  --color-text-secondary: #cbd5e1; /* Paragraphs, Descriptions, Normal Content */
 
   /* ==========================
       BORDER & DIVIDER
      ========================== */
 
-  --color-border: #334155;          /* Borders, Dividers, Inputs, Navbar Bottom Border */
-  --color-border-hover: #3B82F6;     /* Primary Blue Border */
-
-
+  --color-border: #334155; /* Borders, Dividers, Inputs, Navbar Bottom Border */
+  --color-border-hover: #3b82f6; /* Primary Blue Border */
 
   /* ==========================
       COMMON COLORS
      ========================== */
 
-  --color-white: #FFFFFF;           /* White text/icons if needed */
+  --color-white: #ffffff; /* White text/icons if needed */
 
-  --color-black: #000000;           /* Shadow & overlays (Use with opacity) */
+  --color-black: #000000; /* Shadow & overlays (Use with opacity) */
 
-
-
- /* ==========================
+  /* ==========================
       FONT FAMILY
      ========================== */
 
-   --font-Jakarta: "Plus Jakarta Sans", sans-serif;   /* Hero, Section Titles */
+  --font-Jakarta: "Plus Jakarta Sans", sans-serif; /* Hero, Section Titles */
 
-  --font-Inter:"Inter", sans-serif;                /* Paragraph, Buttons, Normal Text */
-
+  --font-Inter: "Inter", sans-serif; /* Paragraph, Buttons, Normal Text */
 }
 
-
-
-
-
-@utility tech{
-  @apply  px-3 py-2 border border-primary/30 bg-bg-card rounded-[10px]
+@utility tech {
+  @apply px-3 py-2 border border-primary/30 bg-bg-card rounded-[10px];
 }
 
+@keyframes blinkGlow {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.9);
+  }
 
+  50% {
+    opacity: 0.35;
+    box-shadow: 0 0 2px rgba(59, 130, 246, 0.2);
+  }
+}
 
 .navbar {
   position: relative;
@@ -116,14 +107,14 @@
   bottom: -4px;
   width: 0;
   height: 2px;
-  background: #3B82F6;
+  background: #3b82f6;
   transform: translateX(-50%);
   transition: width 0.3s ease;
 }
 
 .navbar:hover,
 .navbar.active {
-  color: #3B82F6;
+  color: #3b82f6;
 }
 
 .navbar:hover::after,
