@@ -1,98 +1,107 @@
+
 @import "tailwindcss";
 @import "@heroui/styles";
 
+@theme {
+  --color-bg-primary: #0b1120;
+  --color-bg-secondary: #111827;
+  --color-bg-card: #172238;
+
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-accent: #8b5cf6;
+
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+
+  --color-border: #29374d;
+  --color-border-hover: #3b82f6;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --font-Jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-Inter: "Inter", sans-serif;
+}
+
 @utility navbar {
-  @apply font-Inter font-normal md:text-base lg:text-[20px] hover:text-primary/90 duration-300 cursor-pointer;
+  @apply relative cursor-pointer font-Inter text-sm font-medium text-slate-300 transition-colors duration-300 hover:text-blue-400 md:text-base;
 }
 
 @utility tittle {
-  @apply text-[50px] leading-[60px] md:leading-normal md:text-[55px] lg:text-[60px] font-semibold font-Jakarta bg-gradient-to-r from-[#8B5CF6] to-[#3B82F6] bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-white via-blue-100 to-blue-400 bg-clip-text font-Jakarta font-bold tracking-tight text-transparent;
 }
 
 @utility image {
-  @apply md:w-180 lg:w-200 w-70 h-80 md:h-80 lg:h-125 rounded-[20px] mt-16 md:mt-0 object-cover overflow-hidden md:rotate-[5deg] shadow-[0_0_50px_rgba(0,0,0,0.3)] shadow-primary/30 hover:rotate-0 duration-300 hover:shadow-[0_0_50px_rgba(0,0,0,0.5)] hover:shadow-primary/40;
+  @apply h-80 w-70 rounded-[24px] border border-white/10 object-cover shadow-2xl shadow-blue-500/20 transition-all duration-500 hover:rotate-0 hover:scale-[1.02] md:h-96 md:w-80 lg:h-125 lg:w-100;
 }
 
 @utility card {
-  @apply bg-bg-card border border-border rounded-[20px] px-6 py-10 hover:bg-primary/20 h-full hover:-translate-y-0.5 hover:border-border-hover duration-300 hover:shadow-[0_0_30px_rgba(59,130,246,0.2)];
+  @apply h-full rounded-[20px] border border-white/10 bg-white/[0.04] px-6 py-8 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400/50 hover:bg-blue-500/[0.07] hover:shadow-xl hover:shadow-blue-500/10;
 }
 
 @utility myprocess {
-  @apply bg-cyan-200/20 border border-cyan-200 text-cyan-400 font-semibold md:w-12! w-10! h-10! md:h-12!;
+  @apply flex h-10! w-10! items-center justify-center rounded-xl border border-blue-400/30 bg-blue-500/10 font-semibold text-blue-400 md:h-12! md:w-12!;
 }
 
 @utility iconlist {
-  @apply md:w-10  md:h-10  w-10 h-10 bg-transparent rounded-full border border-[#22D3EE] flex justify-center items-center hover:border-transparent hover:bg-[#22D3EE] duration-300 text-[#22D3EE] hover:text-bg-primary text-[16px] md:text-xl cursor-pointer;
-}
-
-@theme {
-  /* ==========================
-      BACKGROUND COLORS
-     ========================== */
-
-  --color-bg-primary: #0b1120; /* Main website background (Body) */
-
-  --color-bg-secondary: #111827; /* Alternate section background (About, Contact, etc.) */
-
-  --color-bg-card: #1e293b; /* Cards (Projects, Skills, Services, Experience) */
-
-  /* ==========================
-      BRAND COLORS
-     ========================== */
-
-  --color-primary: #3b82f6; /* Primary brand color (Buttons, Active Links, Icons, CTA) */
-
-  --color-primary-hover: #2563eb; /* Hover state for primary buttons and links */
-
-  --color-accent: #8b5cf6; /* Accent color (Gradient, Highlights, Small UI Elements) */
-
-  /* ==========================
-      TEXT COLORS
-     ========================== */
-
-  --color-text-primary: #f8fafc; /* Main headings (Hero Title, Section Title, Card Title) */
-
-  --color-text-secondary: #cbd5e1; /* Paragraphs, Descriptions, Normal Content */
-
-  /* ==========================
-      BORDER & DIVIDER
-     ========================== */
-
-  --color-border: #334155; /* Borders, Dividers, Inputs, Navbar Bottom Border */
-  --color-border-hover: #3b82f6; /* Primary Blue Border */
-
-  /* ==========================
-      COMMON COLORS
-     ========================== */
-
-  --color-white: #ffffff; /* White text/icons if needed */
-
-  --color-black: #000000; /* Shadow & overlays (Use with opacity) */
-
-  /* ==========================
-      FONT FAMILY
-     ========================== */
-
-  --font-Jakarta: "Plus Jakarta Sans", sans-serif; /* Hero, Section Titles */
-
-  --font-Inter: "Inter", sans-serif; /* Paragraph, Buttons, Normal Text */
+  @apply flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-white/15 bg-white/5 text-lg text-slate-200 transition-all duration-300 hover:border-blue-400 hover:bg-blue-500 hover:text-white md:h-11 md:w-11;
 }
 
 @utility tech {
-  @apply px-3 py-2 border border-primary/30 bg-bg-card rounded-[10px];
+  @apply rounded-lg border border-blue-400/20 bg-blue-400/[0.07] px-3 py-2 text-sm text-slate-200 transition-colors duration-300 hover:border-blue-400/60 hover:bg-blue-400/10;
 }
 
-@keyframes blinkGlow {
-  0%,
-  100% {
-    opacity: 1;
-    box-shadow: 0 0 12px rgba(59, 130, 246, 0.9);
-  }
+* {
+  box-sizing: border-box;
+}
 
-  50% {
-    opacity: 0.35;
-    box-shadow: 0 0 2px rgba(59, 130, 246, 0.2);
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #0b1120;
+  color: #f8fafc;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body::selection {
+  background: #3b82f6;
+  color: white;
+}
+
+::selection {
+  background: #3b82f6;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section[id],
+div[id] {
+  scroll-margin-top: 90px;
 }
 
 .navbar {
@@ -101,39 +110,116 @@
 }
 
 .navbar::after {
-  content: "";
   position: absolute;
-  left: 50%;
-  bottom: -4px;
-  width: 0;
+  right: 0;
+  bottom: -7px;
+  left: 0;
   height: 2px;
-  background: #3b82f6;
-  transform: translateX(-50%);
-  transition: width 0.3s ease;
+  width: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  content: "";
+  transition: width 250ms ease;
 }
 
 .navbar:hover,
 .navbar.active {
-  color: #3b82f6;
+  color: #60a5fa;
 }
 
 .navbar:hover::after,
 .navbar.active::after {
   width: 100%;
 }
+
+@keyframes blinkGlow {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 12px rgb(59 130 246 / 70%);
+  }
+
+  50% {
+    opacity: 0.45;
+    box-shadow: 0 0 3px rgb(59 130 246 / 20%);
+  }
+}
+
+@keyframes floatY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes gradientMove {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(110deg, #60a5fa, #a78bfa, #f8fafc, #60a5fa);
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientMove 8s ease infinite;
+}
+
+.glass-panel {
+  border: 1px solid rgb(255 255 255 / 9%);
+  background: rgb(255 255 255 / 4%);
+  backdrop-filter: blur(18px);
+}
+
 .swiper-pagination {
-  margin-top: 30px;
   position: relative !important;
+  margin-top: 30px;
 }
 
 .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background: white !important;
-  opacity: 1;
+  width: 9px;
+  height: 9px;
+  background: #94a3b8 !important;
+  opacity: 0.7;
   transition: all 0.3s ease;
 }
+
 .swiper-pagination-bullet-active {
+  width: 25px;
+  border-radius: 999px;
   background: #3b82f6 !important;
-  transform: scale(1.3);
+  opacity: 1;
+}
+
+input,
+textarea,
+select {
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
